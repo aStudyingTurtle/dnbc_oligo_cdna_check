@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(oligo_cdna_check VERSION 1.0.0 LANGUAGES CXX)
+find_package(ZLIB REQUIRED)
+add_executable(oligo_cdna_check src/main.cpp)
+target_compile_features(oligo_cdna_check PRIVATE cxx_std_17)
+target_compile_options(oligo_cdna_check PRIVATE -Wall -Wextra -Wpedantic)
+target_link_libraries(oligo_cdna_check PRIVATE ZLIB::ZLIB)
+install(TARGETS oligo_cdna_check RUNTIME DESTINATION bin)

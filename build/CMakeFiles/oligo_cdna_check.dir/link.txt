@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/oligo_cdna_check.dir/src/main.cpp.o -o oligo_cdna_check  /usr/lib/x86_64-linux-gnu/libz.so 
